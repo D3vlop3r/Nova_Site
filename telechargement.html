@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Téléchargement - NOVA</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo-link">
+                <img src="Logo%20Nova.png" alt="Logo NOVA" class="logo-img">
+            </a>
+            <div class="nav-links">
+                <a href="telechargement.html" class="nav-link active">Téléchargement</a>
+                <a href="wiki.html" class="nav-link">Wiki</a>
+                <a href="#" class="nav-link">Boutique</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="downloads container">
+            <h1 class="page-title">Téléchargement</h1>
+            <p class="page-subtitle">Choisis ta plateforme pour installer NOVA.</p>
+
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="officiel">Officiel</button>
+                <button class="tab-btn" data-tab="non-officiel">Non Officiel</button>
+            </div>
+
+            <div id="officiel" class="tab-content active">
+                <!-- ========================================== -->
+                <!-- SECTION OFFICIEL (MINECRAFT OFFICIEL)      -->
+                <!-- CHANGEZ LES LIENS CI-DESSOUS PLUS TARD     -->
+                <!-- ========================================== -->
+                <h2 class="section-title">Officiel</h2>
+                <div class="platforms">
+                    <div class="platform-card">
+                        <div class="platform-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Logo Linux" width="48" height="48">
+                        </div>
+                        <h2 class="platform-title">Linux</h2>
+                        <p class="platform-desc">Version pour distributions Linux.</p>
+                        <!-- CHANGEZ CE LIEN CI-DESSOUS (OFFICIEL LINUX) -->
+                        <a href="https://github.com/PrismLauncher" target="_blank" rel="noopener noreferrer" class="btn btn-install">Installer</a>
+                    </div>
+
+                    <div class="platform-card">
+                        <div class="platform-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows11/windows11-original.svg" alt="Logo Windows" width="48" height="48">
+                        </div>
+                        <h2 class="platform-title">Windows</h2>
+                        <p class="platform-desc">Version pour Windows 10/11.</p>
+                        <!-- CHANGEZ CE LIEN CI-DESSOUS (OFFICIEL WINDOWS) -->
+                        <a href="https://github.com/PrismLauncher" target="_blank" rel="noopener noreferrer" class="btn btn-install">Installer</a>
+                    </div>
+
+                    <div class="platform-card">
+                        <div class="platform-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apple/apple-original.svg" alt="Logo Mac" width="48" height="48" class="apple-logo">
+                        </div>
+                        <h2 class="platform-title">Mac</h2>
+                        <p class="platform-desc">Version pour macOS.</p>
+                        <!-- CHANGEZ CE LIEN CI-DESSOUS (OFFICIEL MAC) -->
+                        <a href="https://github.com/PrismLauncher" target="_blank" rel="noopener noreferrer" class="btn btn-install">Installer</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="non-officiel" class="tab-content">
+                <!-- ========================================== -->
+                <!-- SECTION NON OFFICIEL (MINECRAFT CRACK)     -->
+                <!-- CHANGEZ LES LIENS CI-DESSOUS PLUS TARD     -->
+                <!-- ========================================== -->
+                <h2 class="section-title">Non Officiel</h2>
+                <div class="platforms">
+                    <div class="platform-card">
+                        <div class="platform-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Logo Linux" width="48" height="48">
+                        </div>
+                        <h2 class="platform-title">Linux</h2>
+                        <p class="platform-desc">Version pour distributions Linux.</p>
+                        <!-- CHANGEZ CE LIEN CI-DESSOUS (NON OFFICIEL LINUX) -->
+                        <a href="https://github.com/Diegiwg/PrismLauncher-Cracked" target="_blank" rel="noopener noreferrer" class="btn btn-install">Installer</a>
+                    </div>
+
+                    <div class="platform-card">
+                        <div class="platform-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows11/windows11-original.svg" alt="Logo Windows" width="48" height="48">
+                        </div>
+                        <h2 class="platform-title">Windows</h2>
+                        <p class="platform-desc">Version pour Windows 10/11.</p>
+                        <!-- CHANGEZ CE LIEN CI-DESSOUS (NON OFFICIEL WINDOWS) -->
+                        <a href="https://github.com/Diegiwg/PrismLauncher-Cracked" target="_blank" rel="noopener noreferrer" class="btn btn-install">Installer</a>
+                    </div>
+
+                    <div class="platform-card">
+                        <div class="platform-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apple/apple-original.svg" alt="Logo Mac" width="48" height="48" class="apple-logo">
+                        </div>
+                        <h2 class="platform-title">Mac</h2>
+                        <p class="platform-desc">Version pour macOS.</p>
+                        <!-- CHANGEZ CE LIEN CI-DESSOUS (NON OFFICIEL MAC) -->
+                        <a href="https://github.com/Diegiwg/PrismLauncher-Cracked" target="_blank" rel="noopener noreferrer" class="btn btn-install">Installer</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+
+                    btn.classList.add('active');
+                    document.getElementById(btn.dataset.tab).classList.add('active');
+                });
+            });
+        </script>
+    </main>
+
+    <footer class="footer">
+        <p>NOVA Serveur.</p>
+    </footer>
+</body>
+</html>
