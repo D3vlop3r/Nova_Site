@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map - NOVA</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo-link">
+                <img src="Logo%20Nova.png" alt="Logo NOVA" class="logo-img">
+            </a>
+            <div class="nav-links">
+                <a href="telechargement.html" class="nav-link">Téléchargement</a>
+                <a href="wiki.html" class="nav-link">Wiki</a>
+                <a href="actualite.html" class="nav-link">Actualité</a>
+                <a href="map.html" class="nav-link">Map</a>
+                <a href="boutique.html" class="nav-link">Boutique</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="map-hero">
+            <h1 class="page-title">Map</h1>
+            <p class="page-subtitle">Carte interactive du serveur Nova.</p>
+        </section>
+
+        <div class="map-content container">
+            <div class="map-iframe-container">
+                <!-- CHANGE L'URL ICI : Remplacez l'adresse ci-dessous par votre URL de carte -->
+                <iframe src="http://localhost:8100/" class="map-iframe" title="Map du serveur"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>NOVA Serveur.</p>
+    </footer>
+</body>
+</html>
